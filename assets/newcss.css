@@ -389,6 +389,61 @@ img {
 }
 
 /*===================== About ==================*/
+
+/* General layout for the About section */
+.about__data {
+  background-color: #f9f9f9;  /* Light background color */
+  padding: 2rem;  /* Spacious padding around the content */
+  max-width: 800px;  /* Limit width to make the text more readable */
+  margin: 0 auto;  /* Center the content horizontally */
+  border-radius: 8px;  /* Rounded corners for a softer look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+  font-family: 'Arial', sans-serif;  /* Readable font */
+  line-height: 1.6;  /* Better spacing between lines */
+}
+
+/* Style the description text */
+.about__description {
+  color: #333;  /* Dark text color for readability */
+  font-size: 1.1rem;  /* Slightly larger font size */
+  text-align: justify;  /* Justify text for clean alignment */
+  letter-spacing: 0.5px;  /* Slight spacing between letters for clarity */
+  margin-top: 1rem;  /* Top margin to give space from the heading */
+  font-weight: 300;  /* Light weight for the text */
+}
+
+/* Bold and emphasized text styles */
+strong {
+  font-weight: 600;  /* Bold the important words */
+  color: #2d2d2d;  /* Slightly darker text for emphasis */
+}
+
+/* Italicized text styles for highlighting */
+em {
+  font-style: italic;  /* Italics for additional emphasis */
+  color: #555;  /* Slightly grayish color for emphasis */
+}
+
+/* Optional: Add a hover effect for the text */
+.about__description:hover {
+  color: #555;  /* Slightly darken the text color on hover */
+  transition: color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+/* Add a heading to section for clarity and engagement */
+.about__data::before {
+  content: "About Me";  /* Custom title before the content */
+  font-size: 2rem;  /* Large, bold title */
+  font-weight: 600;  /* Bold the heading */
+  margin-bottom: 1rem;  /* Space below the title */
+  display: block;  /* Make it a block element */
+  color: #3b3b3b;  /* Slightly darker color for the heading */
+  text-align: center;  /* Center the heading */
+}
+
+
+
+/* -------------------------- */
 .about__img {
   width: 170px;
   border-radius: 500%;
@@ -965,13 +1020,13 @@ img {
     justify-self: center;
   }
 
-  .about__container,
+  /* .about__container,
   .skills__container,
   .project__container,
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
 
   .qualification__section {
     display: grid;
